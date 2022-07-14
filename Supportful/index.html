@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Supportful | Providing Skillful Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div id="cookies-prompt" class="cookies-prompt">
+        <p>We use cookies to improve your experience on our website. For more information related to cookies
+            and to how we use them, please visit our <a href="privacypolicy.html">privacy policy.</a></p>
+            <button onclick="setVisited()">OK</button>
+    </div>    
+    <div class="top-nav-bar-section" id="topnavio">
+        <div class="logo">
+            <img src="assets/Path 10487.png"
+                alt="Supportful logo" width="100%" height="auto">
+        </div>
+        <ul class="menu-items">
+            <li onclick="scrollToElement('whatwedo')">What we do</li>
+            <li onclick="scrollToElement('expertise')">Expertise</li>
+            <li onclick="scrollToElement('people')">People</li>
+            <li onclick="scrollToElement('customers')">Customers</li>
+        </ul>
+        <div id="menuIcon" class="menu-mobile-icon" onclick="showMenu()">
+            <img src="assets/Icon feather-menu1.png"
+            width="20px"
+                alt="Supportful logo" width="30px" height="auto">
+        </div>
+        <div id="menuHideIcon" class="menu-hide-mobile-icon" onclick="hideMenu()">
+            <img src="assets/Icon feather-menu.png"
+            width="20px"
+                alt="Supportful logo" width="30px" height="auto">
+        </div>
+    </div>
+    <ul id="menu-mobile" class="menu-mobile">
+        <li onclick="scrollToElement('whatwedo')">What we do</li>
+        <li onclick="scrollToElement('expertise')">Expertise</li>
+        <li onclick="scrollToElement('people')">People</li>
+        <li onclick="scrollToElement('customers')">Customers</li>
+        <li onclick="scrollToElement('getintouch')">Get in touch</li>
+    </ul>
+    <div class="landing-section">
+        <div class="heading">
+            <h1>We help companies
+                <br>
+                grow their software
+                <br>
+                engineering team.
+            </h1>
+            <br>
+            <p>
+                On demand. By the(ir) book. And the best thing?
+                <br>
+                They stay in control.
+            </p>
+            <br>
+            <br>
+            <button onclick="scrollToElement('getintouch')">Get in touch</button>
+        </div>
+    </div>
+    <div class="benefits-section">
+        <br>
+        <br>
+        <h2>The benefits</h2>
+        <br>
+        <p id="whatwedo">Lorem ipsum dolor sit amet consetetur adispi</p>
+        <br>
+        <br>
+        <ul class="benefits">
+            <li class="benefits-individual">
+                <div class="benefit-icon">
+                    <img src="assets/Icon awesome-users.png"
+                    width="25px"
+                    alt="Supportful logo" height="auto">
+                </div>
+                <h4>Pick the best candidates</h4>
+                <p> From a curated list of 
+                    talents and video interview them.​</p>
+            </li>
+            <li class="benefits-individual">
+                <div class="benefit-icon">
+                    <img src="assets/Icon awesome-cog.png"
+                    width="20px"
+                    alt="Supportful logo" height="auto">
+                </div>
+                <h4>Stay in control</h4>
+                <p>Our engineers will work according to your processes and by your book.​</p>
+            </li>
+            <li class="benefits-individual">
+                <div class="benefit-icon">
+                    <img src="assets/Icon awesome-clock.png"
+                    width="20px"
+                    alt="Supportful logo" height="auto">
+                </div>
+                <h4>Set the working hours</h4>
+                <p>Eastern, Central, Mountain, or
+                    Pacific. And obviously CET.​</p>
+            </li>
+            <li class="benefits-individual">
+                <div class="benefit-icon">
+                    <img src="assets/Icon awesome-money-bill-wave.png"
+                    width="20px"
+                    alt="Supportful logo" height="auto">
+                </div>
+                <h4>Manage your costs</h4>
+                <p>by paying a fixed price. 
+                    No overhead fees.​ </p>
+            </li>
+        </ul>
+        <div class="mock-line"></div>
+        <div class="pricing">
+            <div class="left">
+            </div>
+            <div class="right">
+                <h2>Pricing</h2>
+                <br>
+                <p>Our pricing model is transparent and simple :</p>
+                <p>Fixed monthly fee. No minimum term commitment.</p>
+                <p>That's it.</p>
+                <br>
+                <button onclick="scrollToElement('getintouch')">Get in touch</button>
+            </div>
+        </div>
+    </div>
+    <div class="expertise-section">
+        <br>
+        <br>
+        <div class="upper">
+            <div class="upper-left">
+                <br>
+                <h2 id="expertise">Expertise</h2>
+                <br>
+                <h5>We love these technologies!</h5>
+                <br>
+                <p>
+                    If your favorite tech stack is listed here, feel free 
+                    <br> to ping us for your contracting needs. We 
+                    <br> (probably) have the right match for you.
+                </p>
+                <br>
+                <button onclick="scrollToElement('getintouch')">Get in touch</button>
+            </div>
+            <div class="upper-right">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <ul class="bottom">
+            <li>
+                <div class="expertise-icon">
+                    <img src="assets/Icon awesome-laptop.png"
+                    width="25px"
+                     height="auto">
+                </div>
+                <h4>Frontend</h4>
+                <br>
+                <ul class="expertise-list">
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Angular</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>React</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Javascript</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Typescript</p></li>
+                </ul>
+            </li>
+            <li>
+                <div class="expertise-icon">
+                    <img src="assets/Icon awesome-server.png"
+                    width="25px"
+                     height="auto">
+                </div>
+                <h4>Backend</h4>
+                <br>
+                <ul class="expertise-list">
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Java</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>.NET</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>PHP</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Node,Express</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Python</p></li>
+                </ul>
+            </li>
+            <li>
+                <div class="expertise-icon">
+                    <img src="assets/Icon awesome-cloud.png"
+                    style="width: 25px;"
+                     height="auto">
+                </div>
+                <h4>DevOps</h4>
+                <br>
+                <ul class="expertise-list">
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>AWS</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Microsoft Azure</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Google Cloud</p></li>
+                </ul>
+            </li>
+            <li>
+                <div class="expertise-icon">
+                    <img src="assets/Icon awesome-mobile-alt.png"
+                    style="width: 16px;"
+                     height="auto">
+                </div>
+                <h4>Mobile</h4>
+                <br>
+                <ul class="expertise-list">
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>Android (Java, Kotlin)</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>IOS (Swift, Objective-C)</p></li>
+                    <li><div><img src="assets/index.png" width="10px" alt=""></div><p>React Native</p></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="people-section">
+        <div class="people-left">
+            <h2 id="people">People</h2>
+            <br>
+            <h5>Whether you want to create your startup’s disruptive product or to build an enterprise-level application, our hand-picked experts are here to help. From entry-level graduates to senior architects, we all share a passion for tech and for solving problems.​
+            </h5>
+            <br>
+            <p>Our engineers are fluent in English and can speak at least one other language (sometimes two!). Many of them are certified in their area of expertise and/or are active in the development community.
+            </p>
+        </div>
+        <div class="people-right">
+            <div class="whiteback">
+                <div class="circle">75 <sup>+</sup></div>
+                <p> Years of combined experience</p>
+            </div>
+            <div class="whiteback">
+                <p>Team worked for clients in </p>
+                <div class="circle">5</div>
+                <p> countries</p>
+            </div>
+            <div class="whiteback">
+                <div class="circle" style="transform: translateX(15px);">0</div>
+                <p style="text-align: center;">Recruitment overhead (we manage everything)</p>
+            </div>
+        </div>
+    </div>
+    <div class="our-customers-section">
+        <br>
+        <br>
+        <h2 id="customers">Our customers</h2>
+        <br>
+        <p>Our clients are happy clients</p>
+        <div class="carousell" id="carousell">
+            <!-- <div class="one" id="one">
+                <div>
+                    <div class="cust-ico">
+                        <img src="assets/Path 10812.png"
+                    width="100%" height="auto">
+                    </div>
+                    <br>
+                    <h5>The Supportful team's performance
+                        <br> was really impressive! They are the
+                        <br> backbone
+                        of our operations.
+                    </h5>
+                    <br>
+                    <p>Tom George, Director of Engineering</p>
+                    <br>
+                    <p>Echo360</p>
+                </div>
+                <div>
+                    <div class="cust-ico">
+                        <img src="assets/Path 10812.png"
+                    width="100%" height="auto">
+                    </div>
+                    <br>
+                    <h5>The Supportful team's performance
+                        <br> was really impressive! They are the
+                        <br>
+                        backbone
+                        of our operations.
+                    </h5>
+                    <br>
+                    <p>Tom George, Director of Engineering</p>
+                    <br>
+                    <p>Echo360</p>
+                </div>
+            </div> -->
+            <div class="two" id="two">
+                <div>
+                    <div class="cust-ico">
+                        <img src="assets/Path 10812.png"
+                    width="100%" height="auto">
+                    </div>
+                    <br>
+                    <h5>As a Director of Software Engineering, I have had  the pleasure of 
+                        <br>
+                          working with Supporftul for multiple years
+                          in building out
+                          <br> and supplementing our Development department.
+                          <br> They have consistently provided high quality candidates
+                          <br> to choose from, taking great care in finding developers that meet our particular needs and that are a great fit for our company culture.
+                          <span style="font-size: 18px;">&#128512;</span>
+                    </h5>
+                    <br>
+                    <p>Tom George, Director of Engineering</p>
+                    <br>
+                    <p>Echo360</p>
+                </div>
+                <div>
+                    <div class="cust-ico">
+                        <img src="assets/Path 10812.png"
+                    width="100%" height="auto">
+                    </div>
+                    <br>
+                    <h5> I appreciate the transparency of Supportful’s approach when handling our requests. And the quality of their engineers’ work just stands out!
+                        <span style="font-size: 18px;">&#128516;</span>
+                    </h5>
+                    <br>
+                    <p>Fares Bouchedid, CTO</p>
+                    <br>
+                    <p>ArcusScale</p>
+                </div>
+            </div>
+        </div>
+        <!-- <script>
+            var observer = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting === true) {
+                    console.log('Element is fully visible in screen');
+                    document.getElementById("index1").style.backgroundColor = "transparent";
+                    document.getElementById("index2").style.backgroundColor = "#6b62fd";
+                }
+                else {
+                    console.log('Element is not visible in screen');
+                    document.getElementById("index1").style.backgroundColor = "#6b62fd";
+                    document.getElementById("index2").style.backgroundColor = "transparent";
+                }
+
+            }, { threshold: [1] });
+
+            observer.observe(document.querySelector("#two"));
+        </script> -->
+        <!-- <ul class="indexes">
+            <li id="index1" onclick="scrollInsideCarous('one')"></li>
+            <li id="index2" onclick="scrollInsideCarous('two')"></li>
+        </ul> -->
+        <br>
+        <br>
+    </div>
+    <div class="form-section" id="getintouch">
+        <br>
+        <br>
+        <h2>Get in touch</h2>
+        <br>
+        <p>Still wondering if we are the right partners for you? Let us call you back <br>
+            or feel free to tell us what positions you’re looking to fill. 
+        </p>
+        <br>
+        <br>
+        <Form action="https://getform.io/f/4ac0a83e-37aa-4986-8fad-902cc92bf104" method="POST">
+            <div class="input-cont">
+                <label for="name">Name*</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-cont">
+                <label for="emaili">Email Address*</label>
+                <input type="email" name="email" id="emaili" required>
+            </div>
+            <div class="input-cont">
+                <label for="phnNum">Phone number</label>
+                <input type="tel" name="phonenumber" id="phnNum">
+            </div>
+            <div class="input-cont">
+                <label for="name">Message*</label>
+                <Textarea type="text" name="message" id="message" style="min-height: 5rem;" placeholder="Tell us how we can help" required></Textarea>
+            </div>
+            <br>
+            <button type="submit">Send</button>
+        </Form>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <div class="parag">
+            <p>© 2022 Esperansa Chalhoub. All rights reserved</p>
+            <a onclick="privacyPage()" style="cursor: pointer;">Privacy policy</a>
+        </div>
+        <ul class="socials">
+            <!-- <li class="Social-icon"><img src="assets/Icon awesome-twitter.png"
+                width="10px"
+                     height="auto"></li>
+            <li class="Social-icon"><img src="assets/Icon awesome-facebook-f.png"
+                width="6px"
+                     height="auto"></li> -->
+            <li class="Social-icon"><img src="assets/Icon awesome-linkedin-in.png"
+                width="15px"
+                     height="auto"></li>
+            <!-- <li class="Social-icon"><img src="assets/Icon awesome-youtube.png"
+                width="10px"
+                     height="auto"></li> -->
+        </ul>
+    </footer>
+    <script>
+        var ignoreClickOnMeElement = document.getElementById('topnavio');
+
+document.addEventListener('click', function(event) {
+    var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+    if (!isClickInsideElement) {
+        hideMenu();
+    }
+});
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
